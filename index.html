@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			
+				<section>
+					<h1>TECH BACKPACK  </h1>
+					<h3>LA CONDUITE DE PROJET DIGITAL</h3>
+					<h3>MASTER 208 - 2015</h3>
+					<p>
+						<small>Romain Troche  / <a mailto="romain@spin-interactive.com">romain@spin-interactive.com</a></small>
+					</p>
+				</section>
+				
+				<section>
+					<h2>Romain Troche</h2>
+					<ul>
+						<li>CTO SPIN INTERACTIVE  </li>
+						<li>Organisateur CTO CRUNCH </li>
+						<li>Conseiller technique - Artiste Jazon Frings </li>
+						<li>Ingénieur IMAC</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h1>PLAN</h1>
+					<ul>
+						<li>Comment ca marche internet ? </li>
+						<li>Le bagage technique pour la gestion de projet web</li>
+						<li>Chef de projet VS Développeurs:travailler avec une équipe de développeurs </li>
+						<li>Commen modifier une page web </li>
+					</ul>
+				</section>
+				
+				<section>
+					<iframe width='920' height='498' frameborder='0' marginheight ='0' marginwidth='0' scrolling ='no' src='http://player.ina.fr/player/embed/CAB95006303/1/1b0bd203fbcd702f9bc9b10ac3d0fc21/920/498' ></iframe>
+					<p><small><a href="http://www.ina.fr/video/CAB95006303"> http://www.ina.fr/video/CAB95006303"</a> </small></p>
+				</section>
+				
+				<section>
+					<h2>Comment ca marche le WEB ?</h2>
+					<ul>
+						<li> Le réseau Internet et les protocole TCP/IP et HTTP </li>
+						<li> Différence entre web et internet </li>
+					    <li> Le client: Le navigateur web </li>
+					    <li> Le serveur </li>
+
+
+					</ul>
+				</section>
+				
+				
+				<section data-background="images/Network.jpg"  >
+					<h2 style="background-color: rgba(0, 0, 0, 0.5);color:white" > LE RESEAU INTERNET </h2>
+					<p style="background-color: rgba(0, 0, 0, 0.8); color:white"> 
+					<b> Internet est un réseau reliant des ordinateurs du monde entier.</b>
+          			<br><br> Les ordinateurs qui sont connectés à Internet doivent avoir une adresse pour être contactés: c'est l'adresse IP
+          			<br><br> Pour communiquer entre eux, les ordinateurs doivent utiliser le même langage. On appelle cela des protocoles  
+					<br><br>
+					</p>
+				</section>
+				
+				<section data-background="images/ip-hostname.jpg" data-background-repeat="repeat" data-background-size="300px" >
+					<h2 style="background-color:rgba(255, 255, 255, 0.7); color:black" > Adresse IP </h2>
+					<p style="background-color:rgba(255, 255, 255, 0.7); color:black"> 
+				    Une adresse IP est un numéro unique permettant à un ordinateur de communiquer dans un réseau. 
+					<br><br>Il ne peut pas y avoir plusieurs ordinateurs avec la même adresse IP dans un même réseau. On peut comparer l’adresse IP à un numéro de téléphone
+					<br><br>
+						<b>Votre navigateur  utilise le  <b> protocole DNS   </b>  pour trouver l'adresse IP d'un ordinateur à partir de son nom de domaine. Par exemple, de trouver 216.32.74.52 à partir de 'www.yahoo.com' </b>
+					<br><br>
+					</p>
+				</section>
+				<section data-background="images/tcpip.png" data-background-repeat="repeat" data-background-size="300px" >
+					<h2 style="background-color:rgba(255, 255, 255, 0.7); color:black" >Protocole TCP/IP  </h2>
+					
+					<p style="background-color:rgba(255, 255, 255, 0.9);  color:black"> 
+						TCP veut dire Transmission Control Protocole <br>
+						<br>TCP/IP représente l'ensemble des règles de communication sur internet afin de pouvoir acheminer des paquets de données d’un ordinateur à un autre, en s’appuyant sur les adresses IP des ordinateurs.
+					</p>
+				</section>
+				
+				<section data-background="images/internet1.jpg" >
+					<h2 style="background-color:rgba(0, 0, 0, 0.5); color:white" >Protocole HTTP </h2>
+					<p style="background-color:rgba(0, 0, 0, 0.5);  color:white">  
+          				HTTP a été inventé par Tim Berners-Lee avec les adresses Web et le langage HTML pour créer le World Wide Web. 
+          				<br><br>Le protocole HTTP utilise le protocole TCP/IP  pour  permettre un transfert de fichiers (essentiellement au format HTML et des images )  entre un navigateur (le client) et un serveur Web 
+          				<br><br>Le fichier est localisé à transférer grâce à une adresse appelée URL
+          				<br>
+					</p>
+				</section>
+				
+				<section data-background="images/World_Wide_Web_by_phoenixkeyblack.jpg"  >
+					<h2  style="background-color:rgba(0, 0, 0, 0.7); color:white" " > Différence entre web et internet  </h2>
+
+        			<p  style="background-color:rgba(0, 0, 0, 0.7); color:white" >
+        			<br>Internet n'est rien d'autre qu'un réseau de transport de données. Le web est construit au dessus d'internet qui l'utilise  pour transporter les données. 
+        			<br><br>
+        			Plein d'autres applications que le web sont construites au dessus d'internet:  <br>
+						le mail (protocoles SMTP, POP3...) <br>
+						le chat (protocoles Jabber, AIM...) <br>
+						le  transfert de fichier (protocoles FTP...) <br>
+						les VPN (pour relier des réseaux informatique privés) <br>
+        			</p>
+				</section>
+				
+				<section data-background="images/browserslogos.png" data-background-repeat="repeat" data-background-size="200px" >
+					<h2 style="background-color:rgba(255, 255, 255, 0.9);  color:black" >Le client: le navigateur web </h2>
+					<p  style="background-color:rgba(255, 255, 255, 0.9);  color:black" > 
+							Le but principal d'un navigateur est d'afficher dans sa fenêtre la page web demandé par l'utilisateur et récupéré depuis un serveur
+						<br><br>
+					 		La façon dont le navigateur interprète et affiche les fichiers HTML est précisée dans les spécifications HTML et CSS. 
+						<br><br>
+					 		Ces spécifications sont maintenues par le l'organisation W3C (World Wide Web Consortium), organisation des normes du Web.
+					</p>
+				</section>
+				<section data-background="images/browserslogos.png" data-background-repeat="repeat" data-background-size="200px" >
+					<h2 style="background-color:rgba(255, 255, 255, 0.9);  color:black" >Le client: le navigateur web </h2>
+        			<p style="background-color:rgba(255, 255, 255, 0.9);  color:black" > Les principaux composants d'un navigateur sont :
+          				<br>Le moteur de rendu = HTML+CSS
+          				<br>Le réseau: protocole HTTP 
+          				<br>L'interpréteur JavaScript 
+          			    <br>Le stockage de données: les cookies
+        			</p>
+				</section>
+				
+				<section data-background="images/serveur.jpg" data-background-repeat="repeat" data-background-size="200px" >
+					<h2 style="background-color:rgba(255, 255, 255, 0.9);  color:black" >Le serveur </h2>
+        			<p style="background-color:rgba(255, 255, 255, 0.9);  color:black" > 
+        				Le serveur HTTP est le logiciel prenant en charge les requêtes client-serveur du protocole HTTP développé pour le World Wide Web. Le plus connu est Apache
+          				<br><br>Le plus souvent, un serveur Web utilise d'autres logiciels qui fonctionnent en collaboration avec le serveur HTTP.
+          				<br><br>Certaines combinaisons de logiciels de base sont connues sous différents acronymes, notamment celle d'Apache (serveur HTTP), MySQL (serveur de base de données) et PHP (langage de programmation)
+        			</p>
+				</section>
+		
+				
+				<section>
+					<h2>Le bagage technique </h2>
+					<h2>Pour le chef de projet digital</h2>					
+					<ul>
+						<li>Développement front-end VS back-end </li>
+						<li>Site statique VS site dynamique</li>
+						<li> Web application, application native ou application hybride</li>
+						<li>Les principaux langages webs</li>
+					</ul>
+				</section>
+				
+				<section >
+					<h2>Développement front end VS back end  </h2>
+        			<p> 
+        				 Les rôles de développeur Front-End et développeur Back-End  sont les deux profils-types que l’on retrouve dans la plupart des agences web de nos jours.
+          				<br><br>Lorsque l’on parle de «Front-End», il s’agit finalement des éléments du site que l’on voit à l’écran et avec lesquels on peut interagir.
+        				<br><br>Les éléments du développement front-end sont composés de HTML, CSS et de Javascript contrôlés par le navigateur web de l’utilisateur.
+        			</p>
+				</section>
+				
+				<section >
+					<h2 >Développement front end VS back end  </h2>
+        			<p> 
+          				Le Back-End, c’est un peu comme la partie immergée de l’iceberg. Elle est invisible pour les visiteurs mais représente une grande partie du développement d’un projet web. 
+          				<br><br>On peut décomposer le back-end en trois parties :
+          				<ul>
+          				<li>les  langages de programmation «dynamique»</li>
+          				<li>la bases de données </li>
+          				<li> le serveur web </li>
+          				</ul>
+        			</p>
+				</section>
+				<section >
+					<h2>Page statique  </h2>
+        			<p> 
+          			Ce n'est pas une page sans mouvements ou sans animations, mais une page visible 
+          			telle qu'elle a été conçue. Ces pages peuvent présenter toute forme de contenu, images, 
+          			musique, vidéo etc... mais elles sont toujours présentées de la même façon.
+          			Elles ne changent pas et c'est en ce sens qu'elles sont statiques.
+        			</p>
+				</section>
+				<section >
+					<h2>Page dynamique  </h2>
+        			<p> 
+          			Elles permettent de présenter les informations de différentes manières selon l'interaction du visiteur,
+          			ou le contenu publié depuis un backoffice.
+					Les pages sont alors construites "à la volée" grâce à une programmation conçue par le développeur.
+					Le contenu est issu d'une base de données puis mis en page en temps réel. 
+					<br><br>C'est le cas par exemple d'un site d'E-commerce: présentation des articles par thèmes, couleurs, prix etc... 
+					C'est également le cas des blogs, des sites d'informations, des sites participatifs comme Facebook ou Instagram où les visiteurs génèrent le contenu du site.
+        			</p>
+				</section>
+				
+				<section >
+					<img src="images/dynamiquevsstatique.png" height="100%">
+					<br>
+					<small>Source journal du net</small>
+				</section>
+				
+				
+				
+				<section>
+					<h2>Le bagage technique </h2>
+					<h2>pour le chef de projet digital</h2>
+					<ul>
+						<li>Les cookies</li>
+						<li>Les principaux langages pour le mobile</li>
+						<li>Les principaux CMS</li>
+						<li>La librairie VS le framework VS le SDK</li>
+						<li>API et Webservice </li>
+					</ul>
+				</section>
+				<section>
+					<h2>Chef de projet VS Développeurs:</h2>
+					<h3>Travailler avec une équipe de développeurs</h3>
+					
+					<ul>
+						<li>Le kick-off</li>
+						<li>Evaluation du temps de production</li>
+						<li>La production</li>
+						<li>La recette</li>
+						<li>Le serveur de dev/test/prod </li>
+						<li>Le versionning </li>
+					</ul>
+				</section>
+				
+
+				<section>
+					<h1>Reveal.js</h1>
+					<h3>The HTML Presentation Framework</h3>
+					<p>
+						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Hello There</h2>
+					<p>
+						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
+					</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Vertical Slides</h2>
+						<p>Slides can be nested inside of each other.</p>
+						<p>Use the <em>Space</em> key to navigate through all slides.</p>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>Basement Level 1</h2>
+						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+					</section>
+					<section>
+						<h2>Basement Level 2</h2>
+						<p>That's it, time to go back up.</p>
+						<br>
+						<a href="#/2">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
+						</a>
+					</section>
+				</section>
+
+				<section>
+					<h2>Slides</h2>
+					<p>
+						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Point of View</h2>
+					<p>
+						Press <strong>ESC</strong> to enter the slide overview.
+					</p>
+					<p>
+						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
+					</p>
+				</section>
+
+				<section>
+					<h2>Touch Optimized</h2>
+					<p>
+						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+					</p>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## Markdown support
+
+						Write content using inline or external Markdown.
+						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+
+						```
+						<section data-markdown>
+						  ## Markdown support
+
+						  Write content using inline or external Markdown.
+						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+						</section>
+						```
+					</script>
+				</section>
+
+				<section>
+					<section id="fragments">
+						<h2>Fragments</h2>
+						<p>Hit the next arrow...</p>
+						<p class="fragment">... to step through ...</p>
+						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+					<section>
+						<h2>Fragment Styles</h2>
+						<p>There's different types of fragments, like:</p>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment roll-in">roll-in</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p class="fragment current-visible">current-visible</p>
+						<p class="fragment highlight-red">highlight-red</p>
+						<p class="fragment highlight-blue">highlight-blue</p>
+					</section>
+				</section>
+
+				<section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=slide#/transitions">Slide</a> -
+						<a href="?transition=convex#/transitions">Convex</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a>
+					</p>
+				</section>
+
+				<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						reveal.js comes with a few themes built in: <br>
+						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+					</p>
+				</section>
+
+				<section>
+					<section data-background="#dddddd">
+						<h2>Slide Backgrounds</h2>
+						<p>
+							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+						</p>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
+						<h2>Image Backgrounds</h2>
+						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
+					</section>
+					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
+						<h2>Tiled Backgrounds</h2>
+						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					</section>
+					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
+						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							<h2>Video Backgrounds</h2>
+							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+						</div>
+					</section>
+				</section>
+
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+					</p>
+					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+				</section>
+
+				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+					<h2>Background Transitions</h2>
+					<p>
+						You can override background transitions per-slide.
+					</p>
+					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+				</section>
+
+				<section>
+					<h2>Pretty Code</h2>
+					<pre><code data-trim contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) {
+        node.className += ' roll';
+      }
+    }
+  }
+}
+					</code></pre>
+					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section>
+
+				<section>
+					<h2>Marvelous List</h2>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Fantastic Ordered List</h2>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Tabular Tables</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Value</th>
+								<th>Quantity</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Apples</td>
+								<td>$1</td>
+								<td>7</td>
+							<tr>
+							<tr>
+								<td>Lemonade</td>
+								<td>$2</td>
+								<td>18</td>
+							<tr>
+							<tr>
+								<td>Bread</td>
+								<td>$3</td>
+								<td>2</td>
+							<tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h2>Clever Quotes</h2>
+					<p>
+						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
+					</p>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+					</blockquote>
+				</section>
+
+				<section>
+					<h2>Intergalactic Interconnections</h2>
+					<p>
+						You can link between slides internally,
+						<a href="#/2/3">like this</a>.
+					</p>
+				</section>
+
+				<section>
+					<h2>Speaker View</h2>
+					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
+					<p>Press the <em>S</em> key to try it out.</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<h2>Export to PDF</h2>
+					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
+					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+				</section>
+
+				<section>
+					<h2>Global State</h2>
+					<p>
+						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+						will be added as a class to the document element when the slide is open. This lets you
+						apply broader style changes, like switching the page background.
+					</p>
+				</section>
+
+				<section data-state="customevent">
+					<h2>State Events</h2>
+					<p>
+						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+					</p>
+					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+Reveal.addEventListener( 'customevent', function() {
+	console.log( '"customevent" has fired' );
+} );
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Take a Moment</h2>
+					<p>
+						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+					</p>
+				</section>
+
+				<section>
+					<h2>Much more</h2>
+					<ul>
+						<li>Right-to-left support</li>
+						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
+						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- <a href="http://slides.com">Try the online editor</a> <br>
+						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
