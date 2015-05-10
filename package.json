@@ -22,7 +22,7 @@
     "node": "~0.10.0"
   },
   "scripts": {
-  "start": "node plugin/notes-server"
+  "start": "node plugin/notes-server/index.js"
   },
   "dependencies": {
     "underscore": "~1.5.1",
